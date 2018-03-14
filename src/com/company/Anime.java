@@ -1,4 +1,4 @@
 package com.company;
 
-public class pedro {
+public class Anime {
 }
