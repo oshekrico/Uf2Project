@@ -1,7 +1,4 @@
 package com.company;
 
-public class Anime {
-
-
-
+public class Portada {
 }
