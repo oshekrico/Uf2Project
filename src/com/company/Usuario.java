@@ -1,6 +1,8 @@
 package com.company;
 
 public class Usuario {
-    String Registrarse;
-    String Acceder;
+    String nombre;
+    String correo;
+    String edad;
+    String contraseña;
 }
