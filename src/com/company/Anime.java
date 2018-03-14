@@ -8,5 +8,5 @@ public class Anime {
     int sinopsis
     int fechadelanzamiento
     int cuantoscapitulos
-
+//
 }
