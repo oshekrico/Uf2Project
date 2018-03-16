@@ -1,4 +1,4 @@
-package com.company.model;
+package com.company;
 
 public class Usuario {
     //campos
@@ -7,5 +7,6 @@ public class Usuario {
     String correo;
     String contraseña;
     int edad;
-
+    String hola;
+    String cosa;
 }
