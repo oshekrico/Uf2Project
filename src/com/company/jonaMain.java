@@ -1,9 +1,9 @@
 package com.company;
 
-public class Main {
+public class jonaMain {
 
     public static void main(String[] args) {
-	//
+        //
 
     }
 
