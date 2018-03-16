@@ -8,4 +8,5 @@ public class Usuario {
     String contraseña;
     int edad;
     String hola;
+    String cosa;
 }
