@@ -1,4 +1,4 @@
-package com.company;
+package com.company.model;
 
 public class Anime {
     //campo
@@ -8,5 +8,4 @@ public class Anime {
     int sinopsis;
     int fechadelanzamiento;
     int cuantoscapitulos;
-
 }
