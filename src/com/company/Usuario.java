@@ -7,4 +7,5 @@ public class Usuario {
     String correo;
     String contraseña;
     int edad;
+    String hola;
 }
