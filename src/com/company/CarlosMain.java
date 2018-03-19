@@ -6,7 +6,6 @@ import com.company.view.PantallaGenero;
 public class CarlosMain {
 
     public static void main(String[] args) {
-        // AAA
         PantallaGenero pantallaGenero = new PantallaGenero();
         pantallaGenero.mostrar();
 

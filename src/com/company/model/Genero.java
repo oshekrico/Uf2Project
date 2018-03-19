@@ -10,7 +10,7 @@ public class Genero {
     }
 
     public void setDescripcion(String descripcionGenero){
-        titulo=descripcionGenero;
+        descripcion=descripcionGenero;
 
     }
 }
