@@ -39,8 +39,8 @@ public class NayanMain {
 
         a1.asignarNombreAnime("Fairy tail");
         a1.asignarsinopsis("Anime Aventura");
-        a1.asignarfechaDeLanzamiento();
-        a1.asignarnumeroDeCapitulos();
+//        a1.asignarfechaDeLanzamiento();
+    //    a1.asignarnumeroDeCapitulos();
 
         a2.asignarNombreAnime("Slam Dunk");
         a3.asignarNombreAnime("One piece");
