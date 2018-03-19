@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class PantallaGenero {
 
     public void mostrar(){
-        System.out.println("Elige el genero:");
+
+        System.out.println("Elige el genero");
+
+
 
 
     }
