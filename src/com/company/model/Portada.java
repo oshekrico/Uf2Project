@@ -1,6 +1,6 @@
 package com.company.model;
 
-public class Portada {
+    public class Portada {
     //campos
     public String asciiImage;
 
