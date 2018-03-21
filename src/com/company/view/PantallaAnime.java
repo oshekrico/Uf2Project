@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class PantallaAnime {
 
-    public void mostrar() {
+    public void mostrar(ManagerAnime managerAnime) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Anime");
 
@@ -17,12 +17,8 @@ public class PantallaAnime {
         String sinop = scanner.nextLine();
 
 
-        ManagerAnime managerAnime = new ManagerAnime();
-        managerAnime.crear(nombre, sinop);
 
 
-        Anime anime = managerAnime.consultar();
-
-        System.out.println("anime");
+        System.out.println("Anime creado");
     }
 }
