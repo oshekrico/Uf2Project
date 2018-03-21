@@ -5,15 +5,21 @@ import com.company.model.Genero;
 
 public class ManagerGenero {
 
-    Genero genero;
+    Genero[] generos = new Genero[100];
 
-    public void crear(String estiloGenero){
-        genero = new Genero();
+    public void crear(String estiloGenero) {
+        for (int i = 0; i < generos.length; i++) {
+            generos[i] = new Genero();
 
-        genero.titulo = estiloGenero;
+            generos[i].titulo = estiloGenero;
+        }
+
     }
 
-    public Genero consultar(){
-       return genero;
+    public Genero consultar() {
+        for (int i = 0; i < generos.length; i++) {
+            return generos[i];
+            ;
+        }
     }
 }

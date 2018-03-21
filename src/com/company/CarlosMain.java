@@ -1,14 +1,21 @@
 package com.company;
 
+import com.company.manager.ManagerGenero;
 import com.company.model.Genero;
 import com.company.view.PantallaGenero;
+import com.company.view.PantallaListarGeneros;
 
 public class CarlosMain {
 
     public static void main(String[] args) {
-        PantallaGenero pantallaGenero = new PantallaGenero();
-        pantallaGenero.mostrar();
+        ManagerGenero managerGenero = new ManagerGenero();
 
+
+        PantallaGenero pantallaGenero = new PantallaGenero();
+        pantallaGenero.iniciar(managerGenero);
+
+        PantallaListarGeneros pantallaListarGeneros = new PantallaListarGeneros();
+        pantallaListarGeneros.mostrar(managerGenero);
 
     }
 

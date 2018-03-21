@@ -7,19 +7,12 @@ import java.util.Scanner;
 
 public class PantallaGenero {
 
-    public void mostrar(){
+    public void iniciar(ManagerGenero managerGenero){
         Scanner scanner = new Scanner (System.in);
-
-        ManagerGenero managerGenero = new ManagerGenero();
 
         System.out.println("Nuevo genero:");
         String nombre = scanner.nextLine();
         managerGenero.crear(nombre);
-
-        Genero genero1 = managerGenero.consultar();
-
-        System.out.println("GENERO CREADO: " + genero1.titulo);
-
 
     }
 }
