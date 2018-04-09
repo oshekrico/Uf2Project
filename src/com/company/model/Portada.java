@@ -1,11 +1,13 @@
 package com.company.model;
 
-public class Portada {
+    public class Portada {
     //campos
-    int capitulos;
-    int temporadas;
+    public String asciiImage;
 
-    boolean subtitulada;
+    // TODO: titulo del anime :-)
+
 
     //metodos
+
+
 }
