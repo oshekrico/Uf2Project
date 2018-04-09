@@ -1,12 +1,22 @@
 package com.company;
 
+import com.company.manager.ManagerAnime;
+import com.company.model.Anime;
+import com.company.view.PantallaAnime;
+import com.company.view.PantallaListarAnime;
 
 public class NayanMain {
     public static void main(String[] args) {
 
-    }
+        ManagerAnime managerAnime = new ManagerAnime();
 
-    public  void  mostrar() {
+        PantallaAnime pantallaAnime = new PantallaAnime();
+
+        pantallaAnime.mostrar(managerAnime);
+
+
+  PantallaListarAnime pantallaListarAnime = new PantallaListarAnime();
+   pantallaListarAnime.mostrarLista(managerAnime);
 
 
     }
@@ -17,14 +27,7 @@ public class NayanMain {
 
 
 
-
-
-
-
-
-
-
-
+//
 //    Anime a1 = new Anime();
 //    //  a1.nombreAnime = "Fairy tail";
 //    //   a1.sinopsis = "Anime magia";
@@ -66,3 +69,4 @@ public class NayanMain {
 //                a3.asignarNombreAnime("One piece");
 //                a4.asignarNombreAnime("Bleach");
 //                a5.asignarNombreAnime("Pingu");
+//
