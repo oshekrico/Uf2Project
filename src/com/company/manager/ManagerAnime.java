@@ -3,18 +3,21 @@ package com.company.manager;
 import com.company.model.Anime;
 
 public class ManagerAnime {
-    Anime[] anime = new Anime[100];
-    public void crear (String nombre, String sinop ) {
-        for (int i = 0; i < anime.length ; i++) {
-            if (anime[i] == null) {
+    Anime[] animes = new Anime[100];
 
-                anime[i] = new Anime();
-                anime[i].nombreAnime = nombre;
-                anime[i].sinopsis = sinop;
+    public void crear (String nombre, String sinop ) {
+        for (int i = 0; i < animes.length ; i++) {
+            if (animes[i] == null) {
+                animes[i] = new Anime();
+                animes[i].nombreAnime = nombre;
+                animes[i].sinopsis = sinop;
+                break;
             }
         }
     }
-    public void consultar(){
 
+    public Anime[] obtenerAnimes(){
+        return animes;
     }
 }
+

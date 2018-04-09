@@ -14,12 +14,9 @@ public class NayanMain {
 
         pantallaAnime.mostrar(managerAnime);
 
-        pantallaAnime.mostrar(managerAnime);
 
-//        PantallaListarAnime pantallaListarAnime = new PantallaListarAnime();
-//        pantallaListarAnime.mostrarLista(managerAnime);
-//
-
+  PantallaListarAnime pantallaListarAnime = new PantallaListarAnime();
+   pantallaListarAnime.mostrarLista(managerAnime);
 
 
     }

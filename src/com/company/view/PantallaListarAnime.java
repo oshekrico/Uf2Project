@@ -6,11 +6,14 @@ import java.util.Scanner;
 
 public class PantallaListarAnime {
 
-    public void mostrarLista(ManagerAnime managerAnime) {
-        System.out.println("Lista de anime");
-
+    void show(ManagerAnime managerAnime){
+        System.out.println("LISTA DE ANIMES");
+        mostrarLista(managerAnime);
     }
 
+    public void mostrarLista(ManagerAnime managerAnime) {
+
+    }
 
 
 }
