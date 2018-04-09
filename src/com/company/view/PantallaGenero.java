@@ -12,7 +12,14 @@ public class PantallaGenero {
 
         System.out.println("Nuevo genero:");
         String nombre = scanner.nextLine();
-        managerGenero.crear(nombre);
+
+        System.out.println("Descripción del Genero:");
+        String descripcion = scanner.nextLine();
+
+        managerGenero.crear(nombre,descripcion);
+
+        PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
+        pantallaMenuPrincipal.iniciar(managerGenero);
 
     }
 }

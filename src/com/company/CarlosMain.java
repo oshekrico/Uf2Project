@@ -4,18 +4,21 @@ import com.company.manager.ManagerGenero;
 import com.company.model.Genero;
 import com.company.view.PantallaGenero;
 import com.company.view.PantallaListarGeneros;
+import com.company.view.PantallaMenuPrincipal;
 
 public class CarlosMain {
 
     public static void main(String[] args) {
         ManagerGenero managerGenero = new ManagerGenero();
 
+        PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
+        pantallaMenuPrincipal.iniciar(managerGenero);
 
-        PantallaGenero pantallaGenero = new PantallaGenero();
-        pantallaGenero.iniciar(managerGenero);
-
-        PantallaListarGeneros pantallaListarGeneros = new PantallaListarGeneros();
-        pantallaListarGeneros.mostrar(managerGenero);
+//        PantallaGenero pantallaGenero = new PantallaGenero();
+//        pantallaGenero.iniciar(managerGenero);
+//
+//        PantallaListarGeneros pantallaListarGeneros = new PantallaListarGeneros();
+//        pantallaListarGeneros.mostrar(managerGenero);
 
     }
 
