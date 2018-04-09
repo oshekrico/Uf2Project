@@ -1,6 +1,8 @@
-package com.company.view;
+package com.company.view.autenticacion;
 
 import com.company.manager.ManagerGenero;
+import com.company.view.PantallaGenero;
+import com.company.view.PantallaListarGeneros;
 
 import java.util.Scanner;
 

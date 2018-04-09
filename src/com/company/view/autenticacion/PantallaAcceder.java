@@ -1,6 +1,8 @@
-package com.company.view;
+package com.company.view.autenticacion;
 
 import com.company.manager.ManagerUsuarios;
+import com.company.view.PantallaMenuAdmin;
+import com.company.view.PantallaPrincipal;
 
 import java.util.Scanner;
 

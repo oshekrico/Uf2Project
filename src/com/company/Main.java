@@ -1,7 +1,7 @@
 package com.company;
 
 import com.company.manager.ManagerUsuarios;
-import com.company.view.PantallaMenuAcceso;
+import com.company.view.autenticacion.PantallaMenuAcceso;
 
 public class Main {
 

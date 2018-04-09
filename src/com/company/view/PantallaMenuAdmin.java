@@ -1,7 +1,7 @@
 package com.company.view;
 
 public class PantallaMenuAdmin {
-    void show(){
+    public void show(){
         System.out.println("ADMIN");
 
         System.out.println("a) Añadir anime");

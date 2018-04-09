@@ -1,7 +1,6 @@
-package com.company.view;
+package com.company.view.autenticacion;
 
 import com.company.manager.ManagerUsuarios;
-import com.company.model.Usuario;
 
 import java.util.Scanner;
 
