@@ -1,15 +1,18 @@
 package com.company;
 
 import com.company.manager.ManagerPortada;
-import com.company.model.Portada;
-import com.company.view.Pantallaportada;
+import com.company.view.PantallaMenuPortadas;
 
 public class DaniMain {
     public static void main(String[] args) {
         ManagerPortada managerPortada = new ManagerPortada();
 
-        Pantallaportada pantallaportada = new Pantallaportada();
+        PantallaMenuPortadas pantallaportada = new PantallaMenuPortadas();
         pantallaportada.mostrar(managerPortada);
+
+        // ManagerPortada managerportada = new ManagerPortada();
+        //PantallaMenuPortadas pantallaMenuPortadas = new PantallaMenuPortadas();
+        //pantallaMenuPortadas.iniciar(managerPortada);
 
       //  Portada p1 = new Portada();
       //  p1.asciiImage = "^_^";

@@ -4,6 +4,8 @@ package com.company.model;
     //campos
     public String asciiImage;
 
+    // TODO: titulo del anime :-)
+
 
     //metodos
 
