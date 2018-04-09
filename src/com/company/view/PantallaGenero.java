@@ -18,8 +18,7 @@ public class PantallaGenero {
 
         managerGenero.crear(nombre,descripcion);
 
-        PantallaMenuPrincipal pantallaMenuPrincipal = new PantallaMenuPrincipal();
+        PantallaMenuGeneros pantallaMenuPrincipal = new PantallaMenuGeneros();
         pantallaMenuPrincipal.iniciar(managerGenero);
-
     }
 }

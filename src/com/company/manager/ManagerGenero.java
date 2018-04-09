@@ -28,10 +28,7 @@ public class ManagerGenero {
 
     }
 
-    public Genero consultar() {
-        for (int i = 0; i < generos.length; i++) {
-            return generos[i];
-        }
-        return generos[0];
+    public Genero[] consultar() {
+        return generos;
     }
 }
