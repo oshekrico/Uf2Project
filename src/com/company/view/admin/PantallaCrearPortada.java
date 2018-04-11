@@ -1,4 +1,4 @@
-package com.company.view;
+package com.company.view.admin;
 
 import com.company.manager.ManagerPortada;
 
