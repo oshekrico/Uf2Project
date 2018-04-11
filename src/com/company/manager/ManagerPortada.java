@@ -21,7 +21,7 @@ public class ManagerPortada {
 
 
 
-    public void obtener() {
+    public Portada[] obtener() {
         return portadas;
 
     }
