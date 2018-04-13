@@ -9,7 +9,7 @@ public class Main {
         ManagerUsuarios managerUsuarios = new ManagerUsuarios();
 
         managerUsuarios.crearUsuario("admin", "admin");
-
+        managerUsuarios.crearUsuario("a","a");
 
         PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
         pantallaMenuAcceso.iniciar(managerUsuarios);
