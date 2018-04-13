@@ -1,10 +1,10 @@
-package com.company.view;
+package com.company.view.buscador;
 
 import java.util.Scanner;
 
 public class PantallaBuscadorAnimes {
     public void show(){
-        System.out.println("\033[104;97 AnimeApp:: Buscador Anime\033[0m");
+        System.out.println("\033[104;97mAnimeApp:: Buscador Anime\033[0m");
 
         System.out.println("a) Por titulo");
         System.out.println("b) Por genero");

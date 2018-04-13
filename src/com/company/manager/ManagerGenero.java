@@ -17,15 +17,8 @@ public class ManagerGenero {
             if (generos[i] == null){
                 generos[i] = genero;
                 break;
-
-//                generos[i] = new Genero();
-//                generos[i].titulo = estiloGenero;
-//                generos[i].descripcion = descripcionGenero;
-
             }
-
         }
-
     }
 
     public Genero[] consultar() {
