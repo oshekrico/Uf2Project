@@ -1,5 +1,7 @@
 package com.company.view;
 
+import com.company.manager.ManagerAnimes;
+import com.company.manager.ManagerUsuarios;
 import com.company.view.buscador.PantallaBuscadorAnimes;
 import com.company.view.misanimes.PantallaMisAnimes;
 import com.company.view.ultimosanimes.PantallaUltimosAnimes;
@@ -7,7 +9,7 @@ import com.company.view.ultimosanimes.PantallaUltimosAnimes;
 import java.util.Scanner;
 
 public class PantallaPrincipal {
-    public void iniciar(){
+    public void iniciar(ManagerUsuarios managerUsuarios,ManagerAnimes managerAnimes){
         System.out.println("\033[104;97mAnimeApp:: Principal\033[0m");
 
         System.out.println("a) Buscador animes");
@@ -21,15 +23,15 @@ public class PantallaPrincipal {
         switch(opcion){
             case "a":
                 PantallaBuscadorAnimes pantallaBuscadorAnimes = new PantallaBuscadorAnimes();
-                pantallaBuscadorAnimes.show();
+                pantallaBuscadorAnimes.show(managerUsuarios, managerAnimes);
                 break;
             case "b":
                 PantallaUltimosAnimes pantallaUltimosAnimes = new PantallaUltimosAnimes();
-                pantallaUltimosAnimes.show();
+                pantallaUltimosAnimes.show(managerUsuarios, managerAnimes);
                 break;
             case "c":
                 PantallaMisAnimes pantallaMisAnimes = new PantallaMisAnimes();
-                pantallaMisAnimes.show();
+                pantallaMisAnimes.show(managerUsuarios, managerAnimes);
                 break;
             case "d":
                 break;

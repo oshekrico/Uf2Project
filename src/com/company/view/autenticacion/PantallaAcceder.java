@@ -1,5 +1,6 @@
 package com.company.view.autenticacion;
 
+import com.company.manager.ManagerAnimes;
 import com.company.manager.ManagerUsuarios;
 import com.company.view.admin.PantallaMenuAdmin;
 import com.company.view.PantallaPrincipal;
@@ -7,7 +8,7 @@ import com.company.view.PantallaPrincipal;
 import java.util.Scanner;
 
 public class PantallaAcceder {
-    public void iniciar(ManagerUsuarios managerUsuarios){
+    public void iniciar(ManagerUsuarios managerUsuarios, ManagerAnimes managerAnimes){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("\033[104;97mMyApp :: Acceder\033[0m");
@@ -24,15 +25,15 @@ public class PantallaAcceder {
         if(resultado.equals("ok")){
             if("admin".equals(usuario)){
                 PantallaMenuAdmin pantallaMenuAdmin = new PantallaMenuAdmin();
-                pantallaMenuAdmin.show();
+                pantallaMenuAdmin.show(managerUsuarios,managerAnimes);
             }else {
                 PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-                pantallaPrincipal.iniciar();
+                pantallaPrincipal.iniciar(managerUsuarios, managerAnimes);
             }
         }
         if(resultado.equals("nok")){
             PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
-            pantallaMenuAcceso.iniciar(managerUsuarios);
+            pantallaMenuAcceso.iniciar(managerUsuarios, managerAnimes);
         }
     }
 }

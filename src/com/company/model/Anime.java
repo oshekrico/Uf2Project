@@ -1,12 +1,10 @@
 package com.company.model;
 
 public class Anime {
-    //campo
-    public String nombreAnime;
-    public  String sinopsis;
-    public String fechaDeLanzamiento;
-    public int numeroDeCapitulos;
-
-
-
+    public String titulo;
+    public String genero;
+    public String sinopsis;
+    public String fechaLanzamiento;
+    public int numeroCapitulos;
+    public String estudio;
 }

@@ -1,13 +1,14 @@
-package com.company.view.autenticacion;
-
-import com.company.view.PantallaListarGeneros;
-
-import java.util.Scanner;
-
-public class PantallaMenuPrincipal {
-
-
-//    public void iniciar(ManagerGenero managerGenero){
+//package com.company;
+//
+//import com.company.manager.ManagerUsuarios;
+//import com.company.view.PantallaListarGeneros;
+//
+//import java.util.Scanner;
+//
+//public class PantallaMenuPrincipal {
+//
+//
+//    public void iniciar(ManagerUsuarios managerUsuarios){
 //        System.out.println("\033[104;97mMyApp :: Menu principal\033[0m");
 //        System.out.println("a) Crear Genero");
 //        System.out.println("b) Listar generos");
@@ -23,4 +24,4 @@ public class PantallaMenuPrincipal {
 //            pantallaListarGeneros.mostrar(managerGenero);
 //        }
 //    }
-}
+//}

@@ -1,10 +1,13 @@
 package com.company.view.buscador;
 
+import com.company.manager.ManagerAnimes;
+import com.company.manager.ManagerUsuarios;
+
 import java.util.Scanner;
 
 public class PantallaBuscadorEstudio {
-    public void show(){
-        System.out.println("\033[104;97mAnimeApp:: buscador Anime :: Estudio\033[0m");
+    public void show(ManagerUsuarios managerUsuarios, ManagerAnimes managerAnimes){
+        System.out.println("\033[104;97mAnimeApp:: Buscador Anime :: Estudio\033[0m");
 
         System.out.println("Dime el estudio de tu anime: ");
 
