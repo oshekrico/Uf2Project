@@ -20,8 +20,8 @@ public class PantallaCrearAnime {
 
         managerAnime.crear(nombre,sinop);
 
-      //  PantallaListarAnime pantallaListarAnime = new PantallaListarAnime();
-     //  pantallaListarAnime.mostrarLista(managerAnime);
+        PantallaMenuAnime pantallaMenuAnime = new PantallaMenuAnime();
+        pantallaMenuAnime.mostrar(managerAnime);
 
     }
 }

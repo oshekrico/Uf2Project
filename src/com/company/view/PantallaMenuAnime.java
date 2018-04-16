@@ -5,7 +5,7 @@ import com.company.model.Anime;
 
 import java.util.Scanner;
 
-public class PantallaAnime {
+public class PantallaMenuAnime {
 
     public void mostrar(ManagerAnime managerAnime) {
         Scanner scanner = new Scanner(System.in);

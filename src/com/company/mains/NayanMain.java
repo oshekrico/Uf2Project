@@ -1,8 +1,7 @@
 package com.company.mains;
 
 import com.company.manager.ManagerAnime;
-import com.company.model.Anime;
-import com.company.view.PantallaAnime;
+import com.company.view.PantallaMenuAnime;
 import com.company.view.PantallaListarAnime;
 
 public class NayanMain {
@@ -10,13 +9,13 @@ public class NayanMain {
 
         ManagerAnime managerAnime = new ManagerAnime();
 
-        PantallaAnime pantallaAnime = new PantallaAnime();
+        PantallaMenuAnime pantallaAnime = new PantallaMenuAnime();
 
         pantallaAnime.mostrar(managerAnime);
 
 
-  PantallaListarAnime pantallaListarAnime = new PantallaListarAnime();
-   pantallaListarAnime.mostrarLista(managerAnime);
+        PantallaListarAnime pantallaListarAnime = new PantallaListarAnime();
+        pantallaListarAnime.mostrarLista(managerAnime);
 
 
     }

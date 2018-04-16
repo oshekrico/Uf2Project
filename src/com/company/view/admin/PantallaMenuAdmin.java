@@ -5,7 +5,6 @@ public class PantallaMenuAdmin {
         System.out.println("ADMIN");
 
         System.out.println("a) Añadir anime");
-        System.out.println("b) Añdir genero");
         System.out.println("c) Salir");
     }
 }
