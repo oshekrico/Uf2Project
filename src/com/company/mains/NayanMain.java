@@ -1,4 +1,4 @@
-package com.company;
+package com.company.mains;
 
 import com.company.manager.ManagerAnime;
 import com.company.model.Anime;

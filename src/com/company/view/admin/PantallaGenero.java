@@ -1,7 +1,6 @@
-package com.company.view;
+package com.company.view.admin;
 
 import com.company.manager.ManagerGenero;
-import com.company.model.Genero;
 
 import java.util.Scanner;
 

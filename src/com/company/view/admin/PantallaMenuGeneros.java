@@ -1,6 +1,7 @@
-package com.company.view;
+package com.company.view.admin;
 
 import com.company.manager.ManagerGenero;
+import com.company.view.PantallaListarGeneros;
 
 import java.util.Scanner;
 

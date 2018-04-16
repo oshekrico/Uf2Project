@@ -1,6 +1,8 @@
-package com.company.view;
+package com.company.view.admin;
 
 import com.company.manager.ManagerPortada;
+import com.company.view.PantallaListarPortadas;
+import com.company.view.admin.PantallaCrearPortada;
 
 
 import java.util.Scanner;

@@ -1,8 +1,8 @@
-package com.company;
+package com.company.mains;
 
 import com.company.manager.ManagerGenero;
 
-import com.company.view.PantallaMenuGeneros;
+import com.company.view.admin.PantallaMenuGeneros;
 
 public class CarlosMain {
 

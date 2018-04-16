@@ -1,7 +1,7 @@
-package com.company;
+package com.company.mains;
 
 import com.company.manager.ManagerPortada;
-import com.company.view.PantallaMenuPortadas;
+import com.company.view.admin.PantallaMenuPortadas;
 
 public class DaniMain {
     public static void main(String[] args) {
