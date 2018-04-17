@@ -32,18 +32,24 @@ public class ManagerAnimes {
         int cuenta = 0;
         if (animes != null){
             for (int i = 0; i <animes.length ; i++) {
-                if(animes[i].titulo.equals(titulo)) {
-                    cuenta++;
+                if (animes[i] != null){
+                    if(animes[i].titulo.equals(titulo)) {
+                        cuenta++;
+                    }
                 }
+
             }
         }
         Anime[] animesEncontrados = new Anime[cuenta];
         if (animes != null){
             for (int i = 0,j = 0; i <animes.length ; i++) {
-                if(animes[i].titulo.equals(titulo)) {
-                    animesEncontrados[j] = animes[i];
-                    j++;
+                if (animes[i] != null){
+                    if(animes[i].titulo.equals(titulo)) {
+                        animesEncontrados[j] = animes[i];
+                        j++;
+                    }
                 }
+
             }
         }
 
