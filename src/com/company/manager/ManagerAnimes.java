@@ -59,7 +59,7 @@ public class ManagerAnimes {
 
     public void crearAnimesIniciales(){
         crearAnime("HOLA", "ANIME", "tuyjf", "fd/ds7/8", 1, "ADIOS");
-        crearAnime("HOLA2", "ANIME", "tuyjf", "fd/ds7/8", 1, "ADIOS");
+        crearAnime("HOLA2", "ANIME2", "tuyjf", "fd/ds7/8", 1, "ADIOS");
         crearAnime("HOLA3", "ANIME", "tuyjf", "fd/ds7/8", 1, "ADIOS");
         crearAnime("HOLA4", "ANIME", "tuyjf", "fd/ds7/8", 1, "ADIOS");
         crearAnime("HOLA5", "ANIME", "tuyjf", "fd/ds7/8", 1, "ADIOS");
