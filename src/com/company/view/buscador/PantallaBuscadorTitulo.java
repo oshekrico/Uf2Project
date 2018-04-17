@@ -28,7 +28,7 @@ public class PantallaBuscadorTitulo {
         System.out.println("--      ------         ------");
 
         for (int i = 0; i < encontrados.length; i++) {
-            System.out.println(encontrados[i].titulo);
+            System.out.println(i +"       "+ encontrados[i].titulo + "           "+ encontrados[i].genero);
         }
         System.out.println("");
         System.out.println("Escoge uno de los animes a partir de la ID: ");
