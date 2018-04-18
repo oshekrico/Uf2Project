@@ -84,9 +84,7 @@ public class ManagerAnimes {
 
         crearAnime("Shingeki no Kyojin","q.q","fantasía","Hace más de 100 años, la humanidad es casi aniquilada por unas siniestras criaturas desde unos 3 hasta 15 metros de altura,conocidas como los " +
                 "Titanes, que surgen de la nada con un único propósito: devorar seres humanos. No obstante, un grupo reducido de personas pudo sobrevivir dentro de una enorme área de terreno amurallada, protegida por muros de 50 metros" +
-                " de altura, el triple de los titanes más altos registrados hasta la fecha de su construcción","",,"");
-
-        crearAnime("","","","","06/04/2013",30,"Wit Studio");
+                " de altura, el triple de los titanes más altos registrados hasta la fecha de su construcción","06/04/2013",30,"Wit Studio");
 
 
     }
