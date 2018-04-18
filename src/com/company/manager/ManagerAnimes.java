@@ -5,10 +5,11 @@ import com.company.model.Anime;
 public class ManagerAnimes {
     Anime[] animes = new Anime[40];
 
-    public void crearAnime(String titulo, String genero, String sinopsis, String fechaLanzamiento, int numeroCapitulos, String estudio){
+    public void crearAnime(String titulo, String portada, String genero, String sinopsis, String fechaLanzamiento, int numeroCapitulos, String estudio){
 
         Anime anime = new Anime();
         anime.titulo = titulo;
+        anime.portada = portada;
         anime.genero = genero;
         anime.sinopsis = sinopsis;
         anime.fechaLanzamiento = fechaLanzamiento;
