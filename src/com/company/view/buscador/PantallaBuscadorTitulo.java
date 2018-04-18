@@ -32,7 +32,38 @@ public class PantallaBuscadorTitulo {
         }
         System.out.println("");
         System.out.println("Escoge uno de los animes a partir de la ID: ");
-        String eleccion = scanner.nextLine();
+        int eleccion = scanner.nextInt();
+
+        System.out.println("Este es el anime que has elegido: ");
+        System.out.println(" ");
+        System.out.println("PORTADA");
+        System.out.println("-------");
+        System.out.println(encontrados[eleccion].portada);
+        System.out.println(" ");
+        System.out.println("TITULO");
+        System.out.println("------");
+        System.out.println(encontrados[eleccion].titulo);
+        System.out.println(" ");
+        System.out.println("GENERO");
+        System.out.println("------");
+        System.out.println(encontrados[eleccion].genero);
+        System.out.println(" ");
+        System.out.println("SINOPSIS");
+        System.out.println("--------");
+        System.out.println(encontrados[eleccion].sinopsis);
+        System.out.println(" ");
+        System.out.println("FECHA LANZAMIENTO");
+        System.out.println("-----------------");
+        System.out.println(encontrados[eleccion].fechaLanzamiento);
+        System.out.println(" ");
+        System.out.println("ESTUDIO");
+        System.out.println("-------");
+        System.out.println(encontrados[eleccion].estudio);
+        System.out.println(" ");
+        System.out.println("NUMERO CAPITULOS");
+        System.out.println("----------------");
+        System.out.println(encontrados[eleccion].numeroCapitulos);
+        System.out.println(" ");
 
         ////DAR TODA LA INFO DEL ANIME A PARTIR DEL SCANNER
 

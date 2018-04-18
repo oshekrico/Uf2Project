@@ -33,8 +33,11 @@ public class PantallaCrearAnime {
         System.out.println("Estudio: ");
         String estudio = scanner.nextLine();
 
+        System.out.println("Portada: ");
+        String portada = scanner.nextLine();
 
-        managerAnimes.crearAnime(titulo,genero, sinopsis, fechaLanzamiento, numeroCapitulos, estudio);
+
+        managerAnimes.crearAnime(titulo,genero, sinopsis, fechaLanzamiento, numeroCapitulos, estudio, portada);
 
         PantallaMenuAdmin pantallaMenuAdmin = new PantallaMenuAdmin();
         pantallaMenuAdmin.show(managerUsuarios,managerAnimes);
