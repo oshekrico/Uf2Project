@@ -8,5 +8,5 @@ public class Anime {
     public String fechaLanzamiento;
     public int numeroCapitulos;
     public String estudio;
-    public String portada;
+
 }

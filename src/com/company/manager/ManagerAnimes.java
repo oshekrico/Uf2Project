@@ -34,7 +34,7 @@ public class ManagerAnimes {
         if (animes != null){
             for (int i = 0; i <animes.length ; i++) {
                 if (animes[i] != null){
-                    if(animes[i].titulo.equals(titulo)) {
+                    if(animes[i].titulo.contains(titulo)) {
                         cuenta++;
                     }
                 }
@@ -45,7 +45,63 @@ public class ManagerAnimes {
         if (animes != null){
             for (int i = 0,j = 0; i <animes.length ; i++) {
                 if (animes[i] != null){
-                    if(animes[i].titulo.equals(titulo)) {
+                    if(animes[i].titulo.contains(titulo)) {
+                        animesEncontrados[j] = animes[i];
+                        j++;
+                    }
+                }
+
+            }
+        }
+
+        return animesEncontrados;
+    }
+
+    public Anime[] consultarPorGenero(String genero){
+        int cuenta = 0;
+        if (animes != null){
+            for (int i = 0; i <animes.length ; i++) {
+                if (animes[i] != null){
+                    if(animes[i].genero.contains(genero)) {
+                        cuenta++;
+                    }
+                }
+
+            }
+        }
+        Anime[] animesEncontrados = new Anime[cuenta];
+        if (animes != null){
+            for (int i = 0,j = 0; i <animes.length ; i++) {
+                if (animes[i] != null){
+                    if(animes[i].genero.contains(genero)) {
+                        animesEncontrados[j] = animes[i];
+                        j++;
+                    }
+                }
+
+            }
+        }
+
+        return animesEncontrados;
+    }
+
+    public Anime[] consultarPorEstudio(String estudio){
+        int cuenta = 0;
+        if (animes != null){
+            for (int i = 0; i <animes.length ; i++) {
+                if (animes[i] != null){
+                    if(animes[i].estudio.contains(estudio)) {
+                        cuenta++;
+                    }
+                }
+
+            }
+        }
+        Anime[] animesEncontrados = new Anime[cuenta];
+        if (animes != null){
+            for (int i = 0,j = 0; i <animes.length ; i++) {
+                if (animes[i] != null){
+                    if(animes[i].estudio.contains(estudio)) {
                         animesEncontrados[j] = animes[i];
                         j++;
                     }
