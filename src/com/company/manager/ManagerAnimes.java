@@ -90,7 +90,7 @@ public class ManagerAnimes {
         if (animes != null){
             for (int i = 0; i <animes.length ; i++) {
                 if (animes[i] != null){
-                    if(animes[i].estudio.contains(estudio)) {
+                    if(animes[i].estudio.toLowerCase().contains(estudio.toLowerCase())) {
                         cuenta++;
                     }
                 }
@@ -101,7 +101,7 @@ public class ManagerAnimes {
         if (animes != null){
             for (int i = 0,j = 0; i <animes.length ; i++) {
                 if (animes[i] != null){
-                    if(animes[i].estudio.contains(estudio)) {
+                    if(animes[i].estudio.toLowerCase().contains(estudio.toLowerCase())) {
                         animesEncontrados[j] = animes[i];
                         j++;
                     }
