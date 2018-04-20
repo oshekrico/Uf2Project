@@ -63,6 +63,9 @@ public class ManagerAnimes {
                 " de su hogar y viaja al reino de Fiore para cumplir su sueño de unirse al gremio de Fairy Tail. En el camino conoce a Natsu Dragneel, un joven que busca a Igneel (un dragón que" +
                 " lo crio como un padre adoptivo en su infancia), y que viaja acompañado de su mejor amigo, un gato parlante llamado Happy", "12/10/2009", 277, "Pictures");
 
+
+
+
         crearAnime("One Piece", ":D", "aventura", "La serie comienza con la ejecución de Gol D. Roger, un hombre conocido como el Rey de los Piratas. Poco \" +\n" +
                 "\"antes de su muerte, Roger hace mención a su gran tesoro legendario, el «One Piece» , y a que puede ser tomado por todo aquél que lo desee. Esto marca el inicio de una" +
                 " era conocida como la Gran Era Pirata. Como resultado, un sinnúmero de piratas zarparon hacia Grand Line con el objetivo de encontrarlo", "20/10/1999", 832, "Toei Animation");
@@ -81,10 +84,6 @@ public class ManagerAnimes {
                 "encuentra con una shinigami —personificación japonesa del Dios de la muerte— llamada Rukia Kuchiki, quien se sorprende que pueda verla. Sin embargo, su conversación es interrumpida por la aparición de un" +
                 " hollow, un espíritu maligno. Después de que Rukia fuera gravemente herida al tratar de proteger a Ichigo, esta intenta traspasarle parte de sus poderes a Ichigo para que pueda enfrentarse al hollow en igualdad " +
                 "de condiciones","05/10/2004",366,"Pierrot");
-
-        crearAnime("Shingeki no Kyojin","q.q","fantasía","Hace más de 100 años, la humanidad es casi aniquilada por unas siniestras criaturas desde unos 3 hasta 15 metros de altura,conocidas como los " +
-                "Titanes, que surgen de la nada con un único propósito: devorar seres humanos. No obstante, un grupo reducido de personas pudo sobrevivir dentro de una enorme área de terreno amurallada, protegida por muros de 50 metros" +
-                " de altura, el triple de los titanes más altos registrados hasta la fecha de su construcción","06/04/2013",30,"Wit Studio");
 
 
     }
