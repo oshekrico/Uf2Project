@@ -37,7 +37,7 @@ public class PantallaCrearAnime {
         String estudio = scanner.nextLine();
 
 
-        managerAnimes.crearAnime(titulo, portada,genero, sinopsis, fechaLanzamiento, numeroCapitulos, estudio);
+        managerAnimes.crearAnime(titulo,portada,genero,sinopsis,fechaLanzamiento,numeroCapitulos,estudio);
 
         PantallaMenuAdmin pantallaMenuAdmin = new PantallaMenuAdmin();
         pantallaMenuAdmin.show(managerUsuarios,managerAnimes);
