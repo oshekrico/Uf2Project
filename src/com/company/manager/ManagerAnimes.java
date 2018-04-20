@@ -121,6 +121,20 @@ public class ManagerAnimes {
                 "una persona y se visualizaba mentalmente el rostro de ésta, moriría de un ataque al corazón. Al principio, Light desconfiaba de la autenticidad del cuaderno, pero luego de probarlo en dos ocasiones, se da cuenta que su poder era " +
                 "real","26/06/2007",37,"Madhouse");
 
+        crearAnime("Zero no Tsukaima","XD","Comedia","En un mundo donde existe la magia y existe cierta desigualdad social entre la gente que puede realizar magia y la que no, Louise Françoise Le Blanc de La Vallière, también llamada por sus" +
+                " compañeros en la academia de magia Louise la Cero (ゼロのルイズ Zero no Ruizu?), debido a que ella no es capaz de realizar algún hechizo sin que haya una explosión. En la academia existe un ritual mediante el cual todos ",
+                "24/09/2007",12,"J.C.Staff");
+
+        crearAnime("Yū Yū Hakusho","r.r","Acción",". La historia se centra en Yusuke Urameshi, un chico rebelde que muere salvando a un niño de morir en un accidente de automóvil. Al ir al mundo de los muertos, concluyen que su hora de morir no " +
+                "había llegado aún, por lo que no puede entrar al cielo ni al infierno y en consecuencia debe permanecer en la Tierra con la condición de que ayude a resolver diversos casos asociados a menudo con fenómenos paranormales o entidades demoniacas.",
+                "17/01/1992",112," Pierrot");
+
+        crearAnime("High School DxD","7u7","ecchi","Issei Hyōdō es un estudiante de segundo año de la Academia Kuō que tiene una gran perversión y una conducta muy lasciva. Lleva una vida tranquila hasta que es llamado para una cita con una chica " +
+                "llamada Yūma Amano. Cuando comienza a oscurecer, la chica lo lleva hasta un lugar apartado donde le muestra su verdadera forma. Ella es un ángel caído y planea asesinarlo. Ya que nadie puede salvarlo, Issei muere.","23/03/2012",18,"TNK");
+
+        crearAnime("Shijō Saikyō no Deshi Ken'ichi",":3","ecchi","Ken'ichi Shirahama es un muchacho débil y tímido que se une al club de karate de su escuela en busca de hacerse más fuerte. Sin embargo, los demás miembros solo se dedican a maltratarle por diversión " +
+                "y sin molestarse en entrenarlo. Un día, conoce a una hermosa joven recién trasferida a su clase llamada Miu, quien posee un asombroso poder como luchadora, y tras conocerse se transforma en el primer amigo de la joven","07/10/2006",50,"TMS Entertainment");
+
 
     }
 }
