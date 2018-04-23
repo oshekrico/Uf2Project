@@ -9,5 +9,11 @@ public class PantallaMisAnimes {
         System.out.println(" ");
         System.out.println("Estos son tus Animes: ");
 
+        for (int i = 0; i < managerUsuarios.logeado.misAnimes.length; i++) {
+            if(managerUsuarios.logeado.misAnimes[i] != null) {
+                System.out.println(managerUsuarios.logeado.misAnimes[i].titulo);
+            }
+        }
+
     }
 }

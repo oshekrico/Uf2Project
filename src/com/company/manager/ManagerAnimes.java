@@ -113,6 +113,10 @@ public class ManagerAnimes {
         return animesEncontrados;
     }
 
+    public void añadirAMiLista(ManagerUsuarios managerUsuarios, Anime animeEleccion){
+        managerUsuarios.logeado.misAnimes[0] = animeEleccion;
+    }
+
 
     public void crearAnimesIniciales() {
 
