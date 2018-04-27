@@ -83,7 +83,15 @@ public class PantallaBuscadorGenero {
                 System.out.println("a) Añadir a mi lista");
                 System.out.println("b) Salir");
 
-                String visto = scanner.nextLine();
+            scanner.nextLine();
+
+            String visto = scanner.nextLine();
+            if("a".equals(visto)){
+                managerAnimes.añadirAMiLista(managerUsuarios, encontrados[eleccion]);
+            }
+
+            PantallaBuscadorAnimes pantallaBuscadorAnimes = new PantallaBuscadorAnimes();
+            pantallaBuscadorAnimes.show(managerUsuarios, managerAnimes);
             }
 
             ////DAR TODA LA INFO DEL ANIME A PARTIR DEL SCANNER
