@@ -5,6 +5,7 @@ import com.company.model.Anime;
 import com.company.manager.ManagerAnimes;
 import com.company.manager.ManagerUsuarios;
 import com.company.model.Anime;
+import com.company.view.widget.AnimeWidget;
 
 import java.util.Scanner;
 
@@ -33,8 +34,8 @@ public class PantallaBuscadorEstudio {
         } else {
 
             System.out.println(" ");
-            System.out.println("ID      Titulo         Genero");
-            System.out.println("--      ------         ------");
+            System.out.println("ID      Titulo              Genero");
+            System.out.println("--      ------              ------");
 
             for (int i = 0; i < encontrados.length; i++) {
                 System.out.println(i + "       " + encontrados[i].titulo + "           " + encontrados[i].genero);
@@ -44,34 +45,11 @@ public class PantallaBuscadorEstudio {
             int eleccion = scanner.nextInt();
 
             System.out.println("Este es el anime que has elegido: ");
-            System.out.println(" ");
-            System.out.println("PORTADA");
-            System.out.println("-------");
-            System.out.println(encontrados[eleccion].portada);
-            System.out.println(" ");
-            System.out.println("TITULO");
-            System.out.println("------");
-            System.out.println(encontrados[eleccion].titulo);
-            System.out.println(" ");
-            System.out.println("GENERO");
-            System.out.println("------");
-            System.out.println(encontrados[eleccion].genero);
-            System.out.println(" ");
-            System.out.println("SINOPSIS");
-            System.out.println("--------");
-            System.out.println(encontrados[eleccion].sinopsis);
-            System.out.println(" ");
-            System.out.println("FECHA LANZAMIENTO");
-            System.out.println("-----------------");
-            System.out.println(encontrados[eleccion].fechaLanzamiento);
-            System.out.println(" ");
-            System.out.println("ESTUDIO");
-            System.out.println("-------");
-            System.out.println(encontrados[eleccion].estudio);
-            System.out.println(" ");
-            System.out.println("NUMERO CAPITULOS");
-            System.out.println("----------------");
-            System.out.println(encontrados[eleccion].numeroCapitulos);
+
+            AnimeWidget animeWidget = new AnimeWidget();
+            animeWidget.show(encontrados[eleccion]);
+
+
             System.out.println(" ");
             System.out.println("a) Añadir a mi lista");
             System.out.println("b) Salir");
