@@ -1,6 +1,12 @@
 package com.company.manager;
 
 import com.company.model.Anime;
+import com.company.util.Utils;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
 public class ManagerAnimes {
     Anime[] animes = new Anime[40];
@@ -55,6 +61,7 @@ public class ManagerAnimes {
         }
 
         return animesEncontrados;
+
     }
 
     public Anime[] consultarPorGenero(String genero){
@@ -118,6 +125,53 @@ public class ManagerAnimes {
     }
 
 
+    public Anime[] consultarUltimosAnime(){
+        Anime[] animesEncontrados = new Anime[5];
+
+        List<Anime> listaAnimes = Arrays.asList(animes);
+
+        Collections.sort(listaAnimes, new Comparator<Anime>() {
+            @Override
+            public int compare(Anime o1, Anime o2) {
+                if(o1 == null || o2 == null){
+                    return 0;
+                }
+                if(o1.fechaLanzamiento.equals("") || o2.fechaLanzamiento.equals("")){
+                    return 0;
+                }
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+                return LocalDate.parse(o1.fechaLanzamiento, formatter).compareTo(LocalDate.parse(o2.fechaLanzamiento, formatter));
+            }
+        });
+
+//        for(Anime anime: listaAnimes){
+//            if(anime != null)
+//                System.out.println(anime.titulo +" " +anime.fechaLanzamiento);
+//        }
+
+        for (int i = 0; i < 3 ; i++) {
+
+            if (animesEncontrados[i] != null){
+                return null;
+            }else {
+
+                animesEncontrados[i] = listaAnimes.get(i);
+                animesEncontrados[i] = listaAnimes.get(i);
+                animesEncontrados[i] = listaAnimes.get(i);
+
+            }
+        }
+
+
+
+        return animesEncontrados;
+    }
+
+
+
+
+
     public void crearAnimesIniciales() {
 
         crearAnime("Fairy Tail", "^.^", "fantasía", "Un día, Lucy Heartfilia, una joven de 17 años de edad especializada en la magia de espíritus celestiales, huye" +
@@ -147,7 +201,7 @@ public class ManagerAnimes {
         crearAnime("Dragon Ball","-_-"," Acción","Freezer es un ser que conquista planetas para venderlos después a través de una organizaciónNota a la que pertenecen" +
                 " criaturas de distintas razas. Una de ellas es la de los saiyajin, seres con aspecto humano y poseedores de mucha fuerza. Temeroso de que representen una amenaza para su dominio, Freezer" +
                 " decide usar sus poderes para exterminarlos destruyendo su hogar, el planeta Vegeta.Solo unos cuantos saiyajin sobreviven a la masacre, entre ellos Vegeta, Nappa y los hermanos Raditz y Kakarotto," +
-                " a quienes prefiere dejar con vida para que sigan sirviendo a su propósito","",159,"Toei Animation");
+                " a quienes prefiere dejar con vida para que sigan sirviendo a su propósito","01/01/1986",159,"Toei Animation");
 
         crearAnime("Toradora","*_*","romance","La historia de Toradora! empieza con el protagonista masculino, Ryūji Takasu, quien está frustrado por tratar de verse bien al entrar a " +
                 "segundo año de preparatoria. A pesar de su personalidad gentil, sus ojos los hacen parecer un delincuente intimidante, de manera que se siente sin posibilidades de encajar, especialmente entre sus " +
