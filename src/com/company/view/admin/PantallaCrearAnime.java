@@ -31,7 +31,7 @@ public class PantallaCrearAnime {
         System.out.println("Numero de Capitulos:");
         int numeroCapitulos = scanner.nextInt();
 
-        String basura = scanner.nextLine();
+        scanner.nextLine();
 
         System.out.println("Estudio: ");
         String estudio = scanner.nextLine();

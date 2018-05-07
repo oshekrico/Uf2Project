@@ -5,6 +5,7 @@ import com.company.model.Anime;
 import com.company.manager.ManagerAnimes;
 import com.company.manager.ManagerUsuarios;
 import com.company.model.Anime;
+import com.company.view.widget.AnimeWidget;
 
 import java.util.Scanner;
 
@@ -44,35 +45,8 @@ public class PantallaBuscadorTitulo {
             int eleccion = scanner.nextInt();
 
             System.out.println("Este es el anime que has elegido: ");
-            System.out.println(" ");
-            System.out.println("PORTADA");
-            System.out.println("-------");
-            System.out.println(encontrados[eleccion].portada);
-            System.out.println(" ");
-            System.out.println("TITULO");
-            System.out.println("------");
-            System.out.println(encontrados[eleccion].titulo);
-            System.out.println(" ");
-            System.out.println("GENERO");
-            System.out.println("------");
-            System.out.println(encontrados[eleccion].genero);
-            System.out.println(" ");
-            System.out.println("SINOPSIS");
-            System.out.println("--------");
-            System.out.println(encontrados[eleccion].sinopsis);
-            System.out.println(" ");
-            System.out.println("FECHA LANZAMIENTO");
-            System.out.println("-----------------");
-            System.out.println(encontrados[eleccion].fechaLanzamiento);
-            System.out.println(" ");
-            System.out.println("ESTUDIO");
-            System.out.println("-------");
-            System.out.println(encontrados[eleccion].estudio);
-            System.out.println(" ");
-            System.out.println("NUMERO CAPITULOS");
-            System.out.println("----------------");
-            System.out.println(encontrados[eleccion].numeroCapitulos);
-            System.out.println(" ");
+            AnimeWidget animeWidget = new AnimeWidget();
+            animeWidget.show(encontrados[eleccion]);
 
             System.out.println("a) Añadir a mi lista");
             System.out.println("b) Salir");

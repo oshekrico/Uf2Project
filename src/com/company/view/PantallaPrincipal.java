@@ -17,7 +17,6 @@ public class PantallaPrincipal {
             System.out.println("b) Ultimos animes");
             System.out.println("c) Mis animes");
             System.out.println("d) Cerrar sesión");
-            System.out.println("d) Salir");
 
             Scanner scanner = new Scanner(System.in);
             String opcion = scanner.nextLine();
