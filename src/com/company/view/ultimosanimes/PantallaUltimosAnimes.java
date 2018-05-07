@@ -13,12 +13,13 @@ public class PantallaUltimosAnimes {
         System.out.println("");
 
         Anime[] ultimosAnime = managerAnimes.consultarUltimosAnime();
-        for (int i = 0; i < ; i++) {
 
-        }
         for (int i = 0; i < ultimosAnime.length; i++) {
-            System.out.println(ultimosAnime[i].titulo+" "+ultimosAnime[i].fechaLanzamiento);
-
+            if (ultimosAnime[i] != null) {
+                System.out.println(ultimosAnime[i].titulo + " " + ultimosAnime[i].fechaLanzamiento);;
+            }else{
+                System.out.println("");
+            }
         }
 
 

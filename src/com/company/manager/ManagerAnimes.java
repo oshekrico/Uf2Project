@@ -1,7 +1,7 @@
 package com.company.manager;
 
 import com.company.model.Anime;
-import com.company.util.Utils;
+
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -134,21 +134,17 @@ public class ManagerAnimes {
             @Override
             public int compare(Anime o1, Anime o2) {
                 if(o1 == null || o2 == null){
-                    return 0;
+                    return 1;
                 }
                 if(o1.fechaLanzamiento.equals("") || o2.fechaLanzamiento.equals("")){
-                    return 0;
+                    return 1;
                 }
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-                return LocalDate.parse(o1.fechaLanzamiento, formatter).compareTo(LocalDate.parse(o2.fechaLanzamiento, formatter));
+                return LocalDate.parse(o2.fechaLanzamiento, formatter).compareTo(LocalDate.parse(o1.fechaLanzamiento, formatter));
             }
         });
 
-//        for(Anime anime: listaAnimes){
-//            if(anime != null)
-//                System.out.println(anime.titulo +" " +anime.fechaLanzamiento);
-//        }
 
         for (int i = 0; i < 3 ; i++) {
 
